@@ -1,0 +1,36 @@
+.page-header {
+    width: 100%;
+    display: flex;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__button {
+        display: block;
+        width: 30px;
+        height: 21px;
+        font-size: 0;
+        line-height: 0;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+    }
+    &_opened {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-header {
+        width: 725px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        &__button {
+        display: none;
+        }
+    }
+}

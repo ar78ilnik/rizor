@@ -1,0 +1,48 @@
+.present {
+    background-image: url("../img/uno.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.present__box {
+    font-family: "Rubik Mono One";
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 430px;
+    & span:first-child {
+            display: block;
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            font-family: "Rubik Mono One";
+        }
+    & span:last-child {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-family: "Roboto";
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .present__box {
+        color: #000;
+        & span:first-child {
+            display: block;
+            width: 540px;
+            font-size: 64px;
+            letter-spacing: 5px;
+            font-weight: 400;
+        }
+        & span:last-child {
+            display: block;
+            width: 317px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+    }
+}
