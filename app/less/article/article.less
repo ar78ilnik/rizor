@@ -19,12 +19,16 @@
         font-size: 16px;
         color: #000;
         font-weight: 300;
-        margin-left: 19px;
         display: block;
         line-height: 30px;
     }
     &__body {
         padding-top: 26px;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 300;
+        color: #000;
+        margin-left: 30px;
     }
     &__list {
         padding-top: 20px;
@@ -32,9 +36,30 @@
     &__list-elem {
         font-family: "Roboto";
         font-size: 16px;
-        line-height: 30px;
+        line-height: 25px;
         font-weight: 300;
         padding-left: 59px;
-        margin-bottom: 5px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    &__list-elem::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 15px;
+        left: 21px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 235px;
+        margin: 0 auto;
+    }
+    &__label {
+        font-size: 0;
     }
 }
