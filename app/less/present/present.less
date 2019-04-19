@@ -27,8 +27,16 @@
 }
 
 @media screen and (min-width: 768px) {
+    .present {
+        height: 750px;
+        background-image: url("../img/uno-tablet.png");
+        background-position: 100% 100%;
+        background-size: auto;
+    }
     .present__box {
         color: #000;
+        padding-top: 162px;
+        align-items: flex-start;
         & span:first-child {
             display: block;
             width: 540px;
@@ -44,5 +52,12 @@
             line-height: 20px;
             font-weight: 700;
         }
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .present {
+        width: 1546px;
+        background-image: url("../img/uno-desktop.png");
     }
 }
